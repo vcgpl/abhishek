@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+
+
+public class main 
+{
+	public static void main(String arg[])
+	{
+		ArrayList al=new ArrayList();
+		al.add("A");
+		al.add("B");
+		al.add("C");
+		al.add("D");
+		al.add("E");
+		al.add("A");
+		int i=al.size();
+		System.out.println(al);
+		System.out.println(i);
+		al.add(5,"F");
+		System.out.println(al);
+		
+		ArrayList al1=new ArrayList();
+		al1.add("P");
+		al1.add("Q");
+		al1.add("R");
+		al1.add("S");
+		System.out.println(al1);
+		int j=al1.size();
+		System.out.println(j);
+		
+		al1.addAll(al);
+		System.out.println(al1);
+		
+		al1.contains("A");
+		al1.containsAll(al);
+		
+		//al1.retainAll(al);
+		System.out.println(al1);
+		
+		//al1.removeAll(al);
+		System.out.println(al1);
+		
+		al1.remove(0);
+		System.out.println(al1);
+	}
+}
+	
